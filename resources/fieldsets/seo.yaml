@@ -1,0 +1,44 @@
+title: SEO
+fields:
+  -
+    handle: seo_title
+    field:
+      input_type: text
+      character_limit: 60
+      antlers: false
+      type: text
+      display: 'SEO Title'
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: seo_description
+    field:
+      character_limit: '180'
+      antlers: false
+      type: textarea
+      display: 'SEO Description'
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: seo_image
+    field:
+      max_files: 1
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: 'SEO Image'
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

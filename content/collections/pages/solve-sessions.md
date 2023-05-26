@@ -1,0 +1,23 @@
+---
+id: 2d2166ac-e13a-474a-ac5e-66486e93a6de
+blueprint: page
+title: 'Solve Sessions'
+author: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
+updated_by: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
+updated_at: 1684906071
+---
+## Troubleshooting Support
+Solve Sessions tackle a single problem, roadblock, or question that’s holding you or your team back. Think of it as very practical coaching. 
+
+Solve sessions have addressed:
+- How to get things done when the office admins who quit without notice or notes.
+- Stalled gala planning and developing an event timeline asap.
+- Figuring out which position is the most necessary next hire: program or fundraising?
+
+Solve Sessions start at $110 per hour.
+
+## How to Book
+- Select your time.
+- Answer a few questions so I can be the most effective with your time.
+- Confirm your booking.
+- After we talk, I’ll send you a summary, action list, and any supporting resources we discuss.
