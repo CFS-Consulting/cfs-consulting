@@ -19,6 +19,20 @@ tabs:
               display: Content
               localizable: true
           -
+            handle: section
+            field:
+              mode: default
+              create: true
+              collections:
+                - sections
+              type: entries
+              display: Section
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: author
             field:
               type: users

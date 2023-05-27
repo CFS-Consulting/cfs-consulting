@@ -1,0 +1,25 @@
+<section class="mt-32 bg-gray-50 py-32">
+    <div class="content-wrapper">
+        <h2 class="font-heading text-6xl">Expertise</h2>
+        <div class="mt-24">
+            {{ collection:services }}
+            <article
+                class="grid grid-cols-1 lg:grid-cols-5 gap-32 items-center border-t border-gray-200 pt-24 mt-24 first:border-0 first:pt-0 first:mt-0"
+            >
+                <div class="col-span-1 lg:col-span-2 pr-6">
+                    <img src="{{ glide :src="image" width="600" }}" alt=""
+                    width="600" class="h-28 w-auto mb-6">
+                    <h3 class="font-heading text-3xl text-gray-900">
+                        {{ title }}
+                    </h3>
+                </div>
+                <div
+                    class="col-span-1 lg:col-span-3 text-lg leading-normal prose-ul:list-disc"
+                >
+                    {{ content }}
+                </div>
+            </article>
+            {{ /collection:services }}
+        </div>
+    </div>
+</section>

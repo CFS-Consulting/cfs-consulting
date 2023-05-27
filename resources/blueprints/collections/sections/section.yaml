@@ -17,6 +17,46 @@ tabs:
               type: markdown
               localizable: true
           -
+            handle: action_text
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Action Text'
+              icon: text
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: action_link
+            field:
+              type: link
+              display: 'Action Link'
+              icon: link
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: entries
+            field:
+              mode: default
+              create: true
+              collections:
+                - sections
+                - clients
+                - services
+              type: entries
+              display: Entries
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: assets_field
             field:
               max_files: 1
