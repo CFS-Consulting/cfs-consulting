@@ -3,7 +3,7 @@
         <div
             class="border-t border-gray-100 pt-12 cluster justify-between font-serif v-display-regular"
         >
-            <a href="/" class="">CFS Consulting</a>
+            <a href="/" class="logo">CFS Consulting</a>
             <nav class="cluster gap-x-10 gap-y-4 main-nav">
                 {{ nav:main_nav }}
                 <a href="{{ url }}" class="relative">{{ title }}</a>
@@ -15,8 +15,9 @@
                 <?php
                     date_default_timezone_set("America/Los_Angeles");
                     $now = date('Y');
-                    echo "©{$now} CFS Consulting"
+                    echo "©{$now}"
                 ?>
+                {{ site_settings:site_name }}
             </div>
             <div></div>
             <ul class="cluster gap-6">

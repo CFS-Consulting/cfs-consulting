@@ -4,7 +4,11 @@ blueprint: page
 title: 'Solve Sessions'
 author: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
 updated_by: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
-updated_at: 1684906071
+updated_at: 1685212093
+color_field: '#ccfbf1'
+seo_title: 'Solve Sessions | CFS Consulting'
+seo_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+featured_image: lightbulb.png
 ---
 ## Troubleshooting Support
 Solve Sessions tackle a single problem, roadblock, or question that’s holding you or your team back. Think of it as very practical coaching. 

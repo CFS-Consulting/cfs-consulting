@@ -5,10 +5,12 @@ title: 'Strategy & Support for Growing Nonprofits'
 template: home
 author: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
 updated_by: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
-updated_at: 1685140187
+updated_at: 1685207347
 section:
   - a6b29fcb-314d-46e9-b40e-67ef5ec96f70
   - 8e162b9d-4ff8-47c7-a94c-41f8f2a36a90
+seo_title: 'CFS Consulting | Strategy & Support for Growing Nonprofits'
+seo_description: 'Strategy & Support for Growing Nonprofits.'
 ---
 ## You need a consultant.
 

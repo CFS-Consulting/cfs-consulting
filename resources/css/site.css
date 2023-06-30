@@ -17,6 +17,22 @@
     align-items: center;
 }
 
+.with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.with-sidebar > :last-child {
+    flex-grow: 1;
+}
+
+.with-sidebar > :first-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
+}
+
 .v-display-light {
     font-variation-settings: "opsz" 100, "wght" 300;
 }
@@ -27,8 +43,11 @@
 
 .font-heading,
 .hero-text h1,
+.page-text h1,
 .hero-text h2,
-.hero-text h3 {
+.page-text h2,
+.hero-text h3,
+.page-text h3 {
     font-family: theme("fontFamily.serif");
     font-variation-settings: "opsz" 100, "wght" 300;
 }
@@ -39,6 +58,21 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+}
+
+.logo:hover {
+    opacity: 0.75;
+}
+
+.page-heading::after {
+    content: "";
+    position: absolute;
+    z-index: -5;
+    width: 88%;
+    height: 36px;
+    left: -9px;
+    bottom: -6px;
+    background-color: var(--bg-color);
 }
 
 .main-nav > *::after,
@@ -68,7 +102,8 @@
     opacity: 0.7;
 }
 
-.main-nav > *:hover::after {
+.main-nav > *:hover::after,
+.main-nav > *.active::after {
     width: 88%;
 }
 
@@ -92,7 +127,7 @@
 .swirl {
     position: absolute;
     width: 8rem;
-    bottom: -10rem;
+    bottom: -12rem;
     left: 50%;
     transform: translateX(-50%);
 }

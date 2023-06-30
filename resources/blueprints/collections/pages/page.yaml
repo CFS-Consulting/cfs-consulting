@@ -13,6 +13,23 @@ tabs:
               validate:
                 - required
           -
+            handle: featured_image
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Featured Image'
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: content
             field:
               type: markdown
@@ -48,6 +65,21 @@ tabs:
               display: Template
               localizable: true
               width: 50
+          -
+            handle: color_field
+            field:
+              swatches:
+                - '#fce7f3'
+                - '#fef9c3'
+                - '#ccfbf1'
+              allow_any: false
+              type: color
+              display: 'Color Field'
+              icon: color
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:

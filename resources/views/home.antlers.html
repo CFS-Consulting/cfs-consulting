@@ -1,4 +1,4 @@
-<section class="mt-40">
+<section class="mt-24">
     <article class="content-wrapper">
         <div
             class="flex flex-col gap-12 lg:flex-row lg:gap-24 items-center relative"
@@ -6,7 +6,7 @@
             <div class="w-full lg:w-3/5">
                 <h1 class="small-title mb-4 text-pink-600">{{ title }}</h1>
                 <section
-                    class="hero-text prose-h2:text-6xl prose-h2:text-gray-900 prose-h2:mb-16 prose-p:text-xl prose-p:mt-6 prose-p:leading-normal"
+                    class="hero-text prose-h2:text-5xl md:prose-h2:text-5xl lg:prose-h2:text-6xl prose-h2:text-gray-900 prose-h2:mb-16 prose-p:text-xl prose-p:mt-6 prose-p:leading-normal"
                 >
                     {{ content | widont }}
                 </section>
@@ -48,13 +48,103 @@
     </article>
     <svg
         xmlns="http://www.w3.org/2000/svg"
+        width="690"
+        height="898"
+        viewBox="0 0 690 898"
+        fill="none"
+        class="absolute left-0 top-0"
+    >
+        <g filter="url(#filter0_f_64_94)">
+            <ellipse
+                cx="344.918"
+                cy="449.225"
+                rx="231.889"
+                ry="357.032"
+                transform="rotate(-16.5364 344.918 449.225)"
+                fill="url(#paint0_radial_64_94)"
+                fill-opacity="0.32"
+            />
+        </g>
+        <defs>
+            <filter
+                id="filter0_f_64_94"
+                x="0.43457"
+                y="0.590088"
+                width="688.966"
+                height="897.269"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+            >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                />
+                <feGaussianBlur
+                    stdDeviation="50"
+                    result="effect1_foregroundBlur_64_94"
+                />
+            </filter>
+            <radialGradient
+                id="paint0_radial_64_94"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(344.918 488.19) rotate(90) scale(318.066 206.581)"
+            >
+                <stop stop-color="#FFD43B" />
+                <stop offset="1" stop-color="#D9D9D9" stop-opacity="0" />
+            </radialGradient>
+        </defs>
+    </svg>
+    {{#
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         id="visual"
         viewBox="0 0 1920 1080"
         width="1920"
         height="1080"
         version="1.1"
-        class="absolute -z-10 inset-0 w-full opacity-75"
+        class="absolute -z-10 left-0 right-0 -top-16 w-full opacity-90"
+    >
+        <defs>
+            <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                />
+                <feGaussianBlur
+                    stdDeviation="163"
+                    result="effect1_foregroundBlur"
+                />
+            </filter>
+        </defs>
+        <rect width="1920" height="1080" fill="#ffffff" />
+        <g filter="url(#blur1)">
+            <circle cx="205" cy="524" fill="#ffffff" r="363" />
+            <circle cx="921" cy="145" fill="#fef9c3" r="363" />
+            <circle cx="83" cy="331" fill="#ffffff" r="363" />
+            <circle cx="508" cy="445" fill="#ffffff" r="363" />
+            <circle cx="257" cy="234" fill="#fef9c3" r="363" />
+            <circle cx="458" cy="61" fill="#ffffff" r="363" />
+        </g>
+    </svg>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        id="visual"
+        viewBox="0 0 1920 1080"
+        width="1920"
+        height="1080"
+        version="1.1"
+        class="hidden absolute -z-10 left-0 right-0 -top-16 w-full opacity-90"
     >
         <path
             d="M0 249L80 240C160 231 320 213 480 180.7C640 148.3 800 101.7 960 127C1120 152.3 1280 249.7 1440 264C1600 278.3 1760 209.7 1840 175.3L1920 141L1920 0L1840 0C1760 0 1600 0 1440 0C1280 0 1120 0 960 0C800 0 640 0 480 0C320 0 160 0 80 0L0 0Z"
@@ -62,20 +152,21 @@
         />
         <path
             d="M0 476L80 488.7C160 501.3 320 526.7 480 497.8C640 469 800 386 960 405.8C1120 425.7 1280 548.3 1440 559.2C1600 570 1760 469 1840 418.5L1920 368L1920 139L1840 173.3C1760 207.7 1600 276.3 1440 262C1280 247.7 1120 150.3 960 125C800 99.7 640 146.3 480 178.7C320 211 160 229 80 238L0 247Z"
-            fill="#fbfbfb"
+            fill="#f9fafb"
         />
         <path
             d="M0 725L80 746.5C160 768 320 811 480 803.7C640 796.3 800 738.7 960 729.7C1120 720.7 1280 760.3 1440 796.3C1600 832.3 1760 864.7 1840 880.8L1920 897L1920 366L1840 416.5C1760 467 1600 568 1440 557.2C1280 546.3 1120 423.7 960 403.8C800 384 640 467 480 495.8C320 524.7 160 499.3 80 486.7L0 474Z"
-            fill="#eeeeee"
+            fill="#f3f4f6"
         />
         <path
             d="M0 811L80 845.2C160 879.3 320 947.7 480 963.8C640 980 800 944 960 924.2C1120 904.3 1280 900.7 1440 922.3C1600 944 1760 991 1840 1014.5L1920 1038L1920 895L1840 878.8C1760 862.7 1600 830.3 1440 794.3C1280 758.3 1120 718.7 960 727.7C800 736.7 640 794.3 480 801.7C320 809 160 766 80 744.5L0 723Z"
-            fill="#fbfbfb"
+            fill="#f9fafb"
         />
         <path
             d="M0 1081L80 1081C160 1081 320 1081 480 1081C640 1081 800 1081 960 1081C1120 1081 1280 1081 1440 1081C1600 1081 1760 1081 1840 1081L1920 1081L1920 1036L1840 1012.5C1760 989 1600 942 1440 920.3C1280 898.7 1120 902.3 960 922.2C800 942 640 978 480 961.8C320 945.7 160 877.3 80 843.2L0 809Z"
             fill="#ffffff"
         />
     </svg>
+    #}}
 </section>
 {{ partial:expertise_list }} {{ partial:clients_list }} {{ partial:cta }}

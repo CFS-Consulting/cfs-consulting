@@ -4,7 +4,11 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{ title ?? site:name }}</title>
+        <title>{{ seo_title ?? title ?? site:name }}</title>
+        <meta
+            name="description"
+            content="{{ seo_description ?? site_settings:site_description }}"
+        />
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
         <link rel="stylesheet" href="https://use.typekit.net/ooj2ftr.css" />
     </head>
