@@ -1,0 +1,85 @@
+title: 'Call to Action'
+fields:
+  -
+    handle: cta_heading
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Heading
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: cta_text
+    field:
+      antlers: false
+      type: textarea
+      display: Text
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: cta_button
+    field:
+      fields:
+        -
+          handle: cta_button_text
+          field:
+            input_type: text
+            antlers: false
+            type: text
+            display: 'Button Text'
+            icon: text
+            width: 50
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            hide_display: false
+        -
+          handle: cta_button_link
+          field:
+            collections:
+              - pages
+            type: link
+            display: 'Button Link'
+            icon: link
+            width: 50
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            hide_display: false
+      mode: stacked
+      max_rows: 1
+      min_rows: 1
+      reorderable: false
+      fullscreen: false
+      type: grid
+      display: Button
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: cta_image
+    field:
+      max_files: 1
+      min_files: 1
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: Image
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

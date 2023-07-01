@@ -1,9 +1,9 @@
 <footer class="mt-32 pb-8">
     <div class="content-wrapper">
         <div
-            class="border-t border-gray-100 pt-12 cluster justify-between font-serif v-display-regular"
+            class="border-t border-neutral-light pt-12 cluster gap-4 justify-between"
         >
-            <a href="/" class="logo">CFS Consulting</a>
+            <a href="/" class="logo heading-text text-xl">CFS Consulting</a>
             <nav class="cluster gap-x-10 gap-y-4 main-nav">
                 {{ nav:main_nav }}
                 <a href="{{ url }}" class="relative">{{ title }}</a>

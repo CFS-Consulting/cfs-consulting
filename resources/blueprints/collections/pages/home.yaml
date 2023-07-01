@@ -1,0 +1,332 @@
+title: Home
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: Hero
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: hero_icon
+            field:
+              type: icon
+              display: Icon
+              icon: icon_picker
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: hero_eyebrow
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Eyebrow
+              icon: text
+              width: 66
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: hero_heading_code
+            field:
+              theme: light
+              mode: htmlmixed
+              mode_selectable: false
+              indent_type: tabs
+              indent_size: 4
+              key_map: default
+              line_numbers: true
+              line_wrapping: true
+              antlers: false
+              type: code
+              display: Heading
+              icon: code
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: hero_description
+            field:
+              antlers: false
+              type: textarea
+              display: Description
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: hero_button_list
+            field:
+              fields:
+                -
+                  handle: hero_button_text
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'Button Text'
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                    width: 50
+                -
+                  handle: hero_button_link
+                  field:
+                    type: link
+                    display: 'Button Link'
+                    icon: link
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                    width: 50
+              mode: stacked
+              max_rows: 2
+              min_rows: 1
+              reorderable: true
+              fullscreen: false
+              type: grid
+              display: 'Button List'
+              icon: grid
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: hero_image
+            field:
+              max_files: 1
+              min_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Image
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+      -
+        display: Testimonials
+        fields:
+          -
+            handle: testimonial_heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Heading
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: testimonial_entries
+            field:
+              mode: default
+              create: true
+              collections:
+                - testimonials
+              type: entries
+              display: 'Testimonial Entries'
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: testimonial_subheading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Subheading
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: client_entries
+            field:
+              mode: default
+              create: true
+              collections:
+                - clients
+              type: entries
+              display: 'Client Entries'
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+      -
+        display: Expertise
+        fields:
+          -
+            handle: expertise_icon
+            field:
+              type: icon
+              display: Icon
+              icon: icon_picker
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: expertise_eyebrow
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Eyebrow
+              icon: text
+              width: 66
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: expertise_heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Heading
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: expertise_description
+            field:
+              antlers: false
+              type: textarea
+              display: Description
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: expertise_entries
+            field:
+              mode: default
+              create: true
+              collections:
+                - services
+              type: entries
+              display: 'Expertise Entries'
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: expertise_button
+            field:
+              fields:
+                -
+                  handle: expertise_button_text
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'Button Text'
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: expertise_button_link
+                  field:
+                    collections:
+                      - pages
+                    type: link
+                    display: 'Button Link'
+                    icon: link
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+              mode: stacked
+              max_rows: 1
+              min_rows: 1
+              reorderable: false
+              fullscreen: false
+              type: grid
+              display: Button
+              icon: grid
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+      -
+        display: 'Call to Action'
+        fields:
+          -
+            import: cta
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template
+            field:
+              hide_partials: true
+              blueprint: false
+              type: template
+              display: Template
+              icon: template
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'SEO Fields'
+        fields:
+          -
+            import: seo

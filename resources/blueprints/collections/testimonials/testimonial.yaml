@@ -1,0 +1,61 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              type: markdown
+              localizable: true
+          -
+            handle: attribution
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Attribution
+              icon: text
+              instructions: 'The person who gave the testimonial.'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: attribution_detail
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Attribution Detail'
+              icon: text
+              instructions: 'The title and/or organization of the person who gave the testimonial.'
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - testimonials
+              max_items: 1
+              listable: false
+              localizable: true
+title: Testimonial

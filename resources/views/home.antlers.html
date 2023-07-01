@@ -1,172 +1,302 @@
-<section class="mt-24">
+<div class="hero-wrapper pt-48 pb-12 relative overflow-y-hidden">
     <article class="content-wrapper">
         <div
             class="flex flex-col gap-12 lg:flex-row lg:gap-24 items-center relative"
         >
-            <div class="w-full lg:w-3/5">
-                <h1 class="small-title mb-4 text-pink-600">{{ title }}</h1>
-                <section
-                    class="hero-text prose-h2:text-5xl md:prose-h2:text-5xl lg:prose-h2:text-6xl prose-h2:text-gray-900 prose-h2:mb-16 prose-p:text-xl prose-p:mt-6 prose-p:leading-normal"
-                >
-                    {{ content | widont }}
-                </section>
-            </div>
-            <div class="w-full lg:w-2/5">
-                {{ asset url="/assets/character.png" }} <img src="{{ glide
-                :src="url" width="900" }}" alt="{{ alt }}" width="900"
-                height="1259" /> {{ /asset }}
-            </div>
-            {{ asset url="/assets/swirl.png" }} <img src="{{ glide :src="url"
-            width="600" }}" width="600" alt="" class="swirl" /> {{ /asset }}
-        </div>
-        <div
-            class="flex flex-col relative lg:flex-row gap-12 lg:gap-24 items-center mt-24 lg:mt-60"
-        >
-            {{ collection:sections id:is="a6b29fcb-314d-46e9-b40e-67ef5ec96f70"
-            }}
-            <div class="w-full lg:w-1/5">
-                {{ asset url="/assets/swirl-2.png" }} <img src="{{ glide
-                :src="url" width="600" }}" alt="{{ alt }}" width="600"
-                height="559" /> {{ /asset }}
-            </div>
-            <div class="space-y-8 w-full lg:w-4/5">
-                <h2 class="font-heading text-4xl text-gray-900">{{ title }}</h2>
-                <div class="text-xl max-w-[55ch] leading-normal">
-                    {{ content }}
-                </div>
-                <a
-                    href="{{ action_link }}"
-                    class="callout-link small-title inline-block"
-                    >{{ action_text }}</a
-                >
-            </div>
+            <div class="w-full lg:w-[55%] flow" style="--flow-space: 3rem">
+                <header class="flow" style="--flow-space: 0.5rem">
+                    <div class="cluster gap-2 small-title">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon"
+                            style="color: var(--brand-pink)"
+                        >
+                            <path
+                                d="M9.99151 14.5101C12.7865 14.5101 15.233 12.9956 15.233 9.63003C15.233 6.26449 12.7865 4.75 9.99151 4.75C7.19653 4.75 4.75 6.26449 4.75 9.63003C4.75 10.8662 5.08005 11.8526 5.6362 12.606C5.83794 12.8793 5.79543 13.5163 5.63421 13.8153C5.24836 14.5309 5.97738 15.315 6.76977 15.1333C7.3629 14.9974 7.98504 14.8134 8.5295 14.5666C8.72883 14.4762 8.94893 14.4398 9.16641 14.4644C9.43657 14.4949 9.7123 14.5101 9.99151 14.5101Z"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+                            <path
+                                d="M18.8088 10.0264C18.5473 9.70522 18.0748 9.65688 17.7537 9.91844C17.4325 10.18 17.3841 10.6524 17.6457 10.9736L18.8088 10.0264ZM18.3467 16.606L18.9501 17.0514L18.3467 16.606ZM15.4534 18.5666L15.1438 19.2497L15.1438 19.2497L15.4534 18.5666ZM17.2132 19.1333L17.3807 18.4023L17.3807 18.4023L17.2132 19.1333ZM14.8165 18.4644L14.9008 19.2096L14.9008 19.2096L14.8165 18.4644ZM10.9803 16.8944C10.6458 16.6501 10.1766 16.7231 9.93226 17.0575C9.6879 17.392 9.76093 17.8612 10.0954 18.1056L10.9803 16.8944ZM18.3487 17.8153L17.6886 18.1713L17.6886 18.1713L18.3487 17.8153ZM19.9829 13.63C19.9829 12.1584 19.5596 10.9483 18.8088 10.0264L17.6457 10.9736C18.151 11.5941 18.4829 12.4572 18.4829 13.63H19.9829ZM18.9501 17.0514C19.6137 16.1525 19.9829 15.0047 19.9829 13.63H18.4829C18.4829 14.7277 18.192 15.5527 17.7433 16.1606L18.9501 17.0514ZM15.1438 19.2497C15.7505 19.5247 16.4253 19.7222 17.0456 19.8644L17.3807 18.4023C16.8147 18.2725 16.2453 18.1021 15.7631 17.8835L15.1438 19.2497ZM13.9914 19.2601C14.2976 19.2601 14.6015 19.2435 14.9008 19.2096L14.7322 17.7191C14.4912 17.7464 14.2436 17.7601 13.9914 17.7601V19.2601ZM10.0954 18.1056C11.1905 18.9057 12.5779 19.2601 13.9914 19.2601V17.7601C12.8134 17.7601 11.759 17.4634 10.9803 16.8944L10.0954 18.1056ZM15.7631 17.8835C15.4442 17.739 15.0882 17.6789 14.7322 17.7191L14.9008 19.2096C14.9797 19.2007 15.064 19.2135 15.1438 19.2497L15.7631 17.8835ZM17.6886 18.1713C17.7076 18.2065 17.7058 18.2245 17.7043 18.2341C17.7019 18.2495 17.6921 18.2788 17.6617 18.3131C17.5963 18.3868 17.4894 18.4272 17.3807 18.4023L17.0456 19.8644C17.7293 20.0211 18.3831 19.7603 18.7839 19.3084C19.1945 18.8455 19.3725 18.1337 19.0089 17.4593L17.6886 18.1713ZM17.7433 16.1606C17.4917 16.5015 17.455 16.9378 17.4618 17.2191C17.4691 17.522 17.5335 17.8837 17.6886 18.1713L19.0089 17.4593C19.0109 17.4632 18.9979 17.4377 18.9842 17.3763C18.9716 17.3192 18.963 17.2514 18.9614 17.1829C18.9597 17.1133 18.9655 17.0587 18.9729 17.0242C18.9815 16.9836 18.9848 17.0045 18.9501 17.0514L17.7433 16.1606Z"
+                                fill="currentColor"
+                            ></path>
+                        </svg>
 
-            {{ /collection:sections }} {{ asset url="/assets/swirl.png" }} <img
-            src="{{ glide :src="url" width="600" }}" width="600" alt=""
-            class="swirl reversed" /> {{ /asset }}
+                        <span>{{ hero_eyebrow }}</span>
+                    </div>
+                    <h1 class="heading-text text-6xl markers">
+                        {{ hero_heading_code }}
+                    </h1>
+                </header>
+                <p>{{ hero_description | widont }}</p>
+                <div class="cluster gap-6">
+                    {{ hero_button_list }} {{ if first }}
+                    <a
+                        href="{{ hero_button_link }}"
+                        target="_blank"
+                        class="button brand"
+                        ><span>{{ hero_button_text }}</span
+                        ><svg
+                            width="20"
+                            height="20"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M13.75 6.75L19.25 12L13.75 17.25"
+                            ></path>
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M19 12H4.75"
+                            ></path>
+                        </svg>
+                    </a>
+                    {{ else }}
+                    <a href="{{ hero_button_link }}" class="button"
+                        ><span>{{ hero_button_text }}</span
+                        ><svg
+                            width="20"
+                            height="20"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M13.75 6.75L19.25 12L13.75 17.25"
+                            ></path>
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M19 12H4.75"
+                            ></path></svg
+                    ></a>
+                    {{ /if }} {{ /hero_button_list }}
+                </div>
+            </div>
+            <div class="w-full lg:w-[45%]">
+                {{ asset url="{{ hero_image }}" }} {{ glide :src="url"
+                width="900" format="webp" }}
+                <img
+                    src="{{ url }}"
+                    alt="{{ alt }}"
+                    width="{{ width }}"
+                    height="{{ height }}"
+                    loading="eager"
+                />
+                {{ /glide }} {{ /asset }}
+            </div>
         </div>
     </article>
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="690"
-        height="898"
-        viewBox="0 0 690 898"
-        fill="none"
-        class="absolute left-0 top-0"
+    {{ asset url="/assets/hero_gradient_green.png" }} {{ glide :src="url"
+    width="1200" format="webp" }}
+    <img
+        src="{{ url }}"
+        width="{{ width }}"
+        height="{{ height }}"
+        alt=""
+        class="absolute inset-0 -z-10 opacity-50 h-full w-full object-cover"
+        loading="eager"
+    />
+    {{ /glide }} {{ /asset }}
+</div>
+<div class="relative" id="testimonials">
+    {{ asset url="/assets/swirl-1688234513.png" }} {{ glide :src="url"
+    width="600" format="webp" }}
+    <img
+        src="{{ url }}"
+        width="{{ width }}"
+        height="{{ height }}"
+        class="swirl"
+        alt=""
+    />
+    {{ /glide }} {{ /asset }}
+    <article class="content-wrapper mt-32">
+        <h2 class="heading-text text-center text-4xl">
+            {{ testimonial_heading }}
+        </h2>
+        <div class="responsive-grid gap-8 items-start my-16">
+            {{ testimonial_entries }} {{ partial:testimonial_entry }} {{
+            /testimonial_entries }}
+        </div>
+    </article>
+</div>
+<div class="overflow-x-hidden">
+    <h3 class="heading-text text-center text-2xl">
+        {{ testimonial_subheading }}
+    </h3>
+    <ul
+        class="cluster gap-12 mt-12 marquee justify-center text-center"
+        role="list"
     >
-        <g filter="url(#filter0_f_64_94)">
-            <ellipse
-                cx="344.918"
-                cy="449.225"
-                rx="231.889"
-                ry="357.032"
-                transform="rotate(-16.5364 344.918 449.225)"
-                fill="url(#paint0_radial_64_94)"
-                fill-opacity="0.32"
+        {{ client_entries }}
+        <li class="small-title">{{ title }}</li>
+        {{ /client_entries }}
+    </ul>
+    {{ asset url="/assets/scribbled_line.png" }} {{ glide :src="url" width="600"
+    format="webp" }}
+    <img
+        src="{{ url }}"
+        width="{{ width }}"
+        height="{{ height }}"
+        class="w-60 mx-auto mt-12"
+        alt=""
+    />
+    {{ /glide }} {{ /asset }}
+</div>
+<div id="expertise" class="p-4 2xl:p-0">
+    <article
+        class="content-wrapper mt-32 rounded-lg bg-gradient-to-br from-neutral-lighter to-neutral-light py-32"
+    >
+        <div
+            class="text-center mx-auto flow max-w-4xl"
+            style="--flow-space: 3rem"
+        >
+            <header class="flow" style="--flow-space: 0.5rem">
+                <div class="cluster gap-2 small-title justify-center">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="icon"
+                        style="color: var(--brand-green)"
+                    >
+                        <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M12 4.75V13m0-8.25-2.25 2.5M12 4.75l2.25 2.5M12 13l-7.25 6.25M12 13l7.25 6.25m-14.5 0v-2.5m0 2.5h2.5m12 0v-2.5m0 2.5h-2.5"
+                        ></path>
+                    </svg>
+
+                    <span>{{ expertise_eyebrow }}</span>
+                </div>
+                <h2 class="heading-text text-5xl markers">
+                    {{ expertise_heading }}
+                </h2>
+            </header>
+            <p>{{ expertise_description | widont }}</p>
+        </div>
+        <div
+            class="responsive-grid gap-20 mt-28 md:px-12"
+            style="--min-width: min(45vw, 500px)"
+        >
+            {{ expertise_entries }}
+            <div class="flow service" style="--flow-space: 2rem">
+                <div>
+                    <div class="blob-wrapper h-36 w-36 mb-4 relative">
+                        {{ asset url="{{ image }}" }} {{ glide :src="url"
+                        width="600" format="webp" }}
+                        <img
+                            class="w-full object-contain h-full relative z-[2]"
+                            src="{{ url }}"
+                            alt="{{ alt }}"
+                            width="{{ width }}"
+                            height="{{ height }}"
+                            loading="lazy"
+                        />
+                        {{ /glide }} {{ /asset }}
+                        <img
+                            src="/assets/blob{{ count }}.svg"
+                            alt=""
+                            class="absolute inset-0 z-[1] w-full h-full scale-90"
+                        />
+                    </div>
+                    <h3 class="heading-text text-3xl">{{ title }}</h3>
+                </div>
+                {{ content | widont }}
+            </div>
+            {{ /expertise_entries }}
+        </div>
+        <div class="center-text mt-16">
+            {{ expertise_button }}
+            <a href="{{ expertise_button_link }}" class="button brand"
+                ><span>{{ expertise_button_text }}</span
+                ><svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M13.75 6.75L19.25 12L13.75 17.25"
+                    ></path>
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M19 12H4.75"
+                    ></path></svg
+            ></a>
+            {{ /expertise_button }}
+        </div>
+    </article>
+</div>
+<div>
+    <article
+        class="content-wrapper flex flex-col gap-12 mt-16 lg:flex-row lg:gap-24 items-center relative"
+    >
+        <div class="w-full lg:w-[40%]">
+            {{ asset url="{{ cta_image }}" }} {{ glide :src="url" width="900"
+            format="webp" }}
+            <img
+                src="{{ url }}"
+                width="{{ width }}"
+                height="{{ height }}"
+                alt="{{ alt }}"
+                loading="lazy"
             />
-        </g>
-        <defs>
-            <filter
-                id="filter0_f_64_94"
-                x="0.43457"
-                y="0.590088"
-                width="688.966"
-                height="897.269"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-            >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="BackgroundImageFix"
-                    result="shape"
-                />
-                <feGaussianBlur
-                    stdDeviation="50"
-                    result="effect1_foregroundBlur_64_94"
-                />
-            </filter>
-            <radialGradient
-                id="paint0_radial_64_94"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(344.918 488.19) rotate(90) scale(318.066 206.581)"
-            >
-                <stop stop-color="#FFD43B" />
-                <stop offset="1" stop-color="#D9D9D9" stop-opacity="0" />
-            </radialGradient>
-        </defs>
-    </svg>
-    {{#
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        id="visual"
-        viewBox="0 0 1920 1080"
-        width="1920"
-        height="1080"
-        version="1.1"
-        class="absolute -z-10 left-0 right-0 -top-16 w-full opacity-90"
-    >
-        <defs>
-            <filter id="blur1" x="-10%" y="-10%" width="120%" height="120%">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="BackgroundImageFix"
-                    result="shape"
-                />
-                <feGaussianBlur
-                    stdDeviation="163"
-                    result="effect1_foregroundBlur"
-                />
-            </filter>
-        </defs>
-        <rect width="1920" height="1080" fill="#ffffff" />
-        <g filter="url(#blur1)">
-            <circle cx="205" cy="524" fill="#ffffff" r="363" />
-            <circle cx="921" cy="145" fill="#fef9c3" r="363" />
-            <circle cx="83" cy="331" fill="#ffffff" r="363" />
-            <circle cx="508" cy="445" fill="#ffffff" r="363" />
-            <circle cx="257" cy="234" fill="#fef9c3" r="363" />
-            <circle cx="458" cy="61" fill="#ffffff" r="363" />
-        </g>
-    </svg>
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        id="visual"
-        viewBox="0 0 1920 1080"
-        width="1920"
-        height="1080"
-        version="1.1"
-        class="hidden absolute -z-10 left-0 right-0 -top-16 w-full opacity-90"
-    >
-        <path
-            d="M0 249L80 240C160 231 320 213 480 180.7C640 148.3 800 101.7 960 127C1120 152.3 1280 249.7 1440 264C1600 278.3 1760 209.7 1840 175.3L1920 141L1920 0L1840 0C1760 0 1600 0 1440 0C1280 0 1120 0 960 0C800 0 640 0 480 0C320 0 160 0 80 0L0 0Z"
-            fill="#ffffff"
-        />
-        <path
-            d="M0 476L80 488.7C160 501.3 320 526.7 480 497.8C640 469 800 386 960 405.8C1120 425.7 1280 548.3 1440 559.2C1600 570 1760 469 1840 418.5L1920 368L1920 139L1840 173.3C1760 207.7 1600 276.3 1440 262C1280 247.7 1120 150.3 960 125C800 99.7 640 146.3 480 178.7C320 211 160 229 80 238L0 247Z"
-            fill="#f9fafb"
-        />
-        <path
-            d="M0 725L80 746.5C160 768 320 811 480 803.7C640 796.3 800 738.7 960 729.7C1120 720.7 1280 760.3 1440 796.3C1600 832.3 1760 864.7 1840 880.8L1920 897L1920 366L1840 416.5C1760 467 1600 568 1440 557.2C1280 546.3 1120 423.7 960 403.8C800 384 640 467 480 495.8C320 524.7 160 499.3 80 486.7L0 474Z"
-            fill="#f3f4f6"
-        />
-        <path
-            d="M0 811L80 845.2C160 879.3 320 947.7 480 963.8C640 980 800 944 960 924.2C1120 904.3 1280 900.7 1440 922.3C1600 944 1760 991 1840 1014.5L1920 1038L1920 895L1840 878.8C1760 862.7 1600 830.3 1440 794.3C1280 758.3 1120 718.7 960 727.7C800 736.7 640 794.3 480 801.7C320 809 160 766 80 744.5L0 723Z"
-            fill="#f9fafb"
-        />
-        <path
-            d="M0 1081L80 1081C160 1081 320 1081 480 1081C640 1081 800 1081 960 1081C1120 1081 1280 1081 1440 1081C1600 1081 1760 1081 1840 1081L1920 1081L1920 1036L1840 1012.5C1760 989 1600 942 1440 920.3C1280 898.7 1120 902.3 960 922.2C800 942 640 978 480 961.8C320 945.7 160 877.3 80 843.2L0 809Z"
-            fill="#ffffff"
-        />
-    </svg>
-    #}}
-</section>
-{{ partial:expertise_list }} {{ partial:clients_list }} {{ partial:cta }}
+            {{ /glide }} {{ /asset }}
+        </div>
+        <div class="flow w-full lg:w-[60%]" style="--flow-space: 3rem">
+            <div class="flow" style="--flow-space: 1.5rem">
+                <h2 class="heading-text text-4xl">{{ cta_heading }}</h2>
+                <p>{{ cta_text }}</p>
+            </div>
+            {{ cta_button }}
+            <a
+                href="{{ cta_button_link }}"
+                target="_blank"
+                class="button brand w-fit"
+                ><span>{{ cta_button_text }}</span
+                ><svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M13.75 6.75L19.25 12L13.75 17.25"
+                    ></path>
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M19 12H4.75"
+                    ></path>
+                </svg>
+            </a>
+            {{ /cta_button }}
+        </div>
+    </article>
+</div>

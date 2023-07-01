@@ -11,10 +11,11 @@
         />
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
         <link rel="stylesheet" href="https://use.typekit.net/ooj2ftr.css" />
+        <link rel="icon" type="image/svg" href="/assets/favicon.svg" />
     </head>
-    <body class="font-sans leading-normal font-light text-lg text-gray-700">
+    <body class="font-sans leading-normal font-light text-lg text-neutral-text">
         {{ partial:nav }}
-        <main class="overflow-x-hidden">{{ template_content }}</main>
+        <main class="">{{ template_content }}</main>
         {{ partial:footer }}
     </body>
 </html>
