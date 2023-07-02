@@ -20,11 +20,11 @@ yarn-error.log
 /.idea
 /.vscode
 # Exlude user content for Fortrabbit
-/content
-/users
-/resources/blueprints
-/resources/fieldsets
-/resources/forms
-/resources/users
-/storage/forms
-/public/assets
+# /content
+# /users
+# /resources/blueprints
+# /resources/fieldsets
+# /resources/forms
+# /resources/users
+# /storage/forms
+# /public/assets
