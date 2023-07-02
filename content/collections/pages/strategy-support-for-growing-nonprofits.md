@@ -13,8 +13,8 @@ hero_button_list:
     hero_button_link: 'https://savvycal.com/cfs/ab7a2c74'
   -
     id: ljkb83nj
-    hero_button_text: 'About Me'
-    hero_button_link: 'entry::74da5900-1bd1-4c2f-bb76-fd22c334c796'
+    hero_button_text: 'Determine the support you need'
+    hero_button_link: 'https://7ydhc8gzbdp.typeform.com/to/dxHSzHRP'
 hero_image: hero_illustration.png
 testimonial_heading: 'Take it from them.'
 testimonial_subheading: 'Who I work with'
@@ -35,8 +35,8 @@ cta_button:
     cta_button_text: 'Book an Appointment'
     cta_button_link: 'https://savvycal.com/cfs/ab7a2c74'
 cta_image: cta_illustration.png
-updated_by: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
-updated_at: 1688253672
+updated_by: 30a080a8-89ff-42bb-8e11-af1cd856bc8e
+updated_at: 1688335113
 expertise_heading: 'Research, reflect & advise.'
 expertise_description: 'My role is to research, reflect, and advise you on the problem at hand and also help you think about the implications of your practices for the future. While working together I may also create process documents, manuals, and other tools that you and your team can keep and adapt as you grow.'
 cta_heading: 'Want to know more?'
