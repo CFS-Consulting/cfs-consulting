@@ -1,10 +1,10 @@
 ---
 id: 74da5900-1bd1-4c2f-bb76-fd22c334c796
 blueprint: page
-title: About
+title: 'About changed headline'
 author: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
 updated_by: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
-updated_at: 1685321921
+updated_at: 1688257681
 template: pages/show
 color_field: '#ccfbf1'
 ---
