@@ -36,12 +36,13 @@
 }
 
 .with-sidebar {
+    --sidebar-width: 20rem;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .with-sidebar > :last-child {
+    flex-basis: var(--sidebar-width, auto);
     flex-grow: 1;
 }
 
@@ -89,6 +90,52 @@ h1.heading-text span {
     color: theme("colors.brand.pink");
 }
 
+.page-text > :where(p, ol, ul, a, blockquote, div) {
+    font-size: theme("fontSize.xl");
+}
+
+.page-text a {
+    color: theme("colors.brand.pink");
+    text-decoration: underline;
+}
+
+.page-text a:hover {
+    text-decoration: none;
+}
+
+.page-text > :where(h2, h3, h4) {
+    font-family: theme("fontFamily.serif");
+    font-variation-settings: "opsz" 100, "wght" 375;
+    color: theme("colors.neutral.dark");
+    line-height: 1.15;
+}
+
+.page-text > :where(h2, h3, h4):not(:first-of-type) {
+    margin-top: 5rem !important;
+}
+
+.page-text img {
+    max-width: 50%;
+}
+
+.page-text strong {
+    font-weight: 700;
+}
+
+.page-text em {
+    font-style: italic;
+}
+
+.page-text > ul {
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+.page-text > ol {
+    list-style-type: decimal;
+    padding-left: 1rem;
+}
+
 .small-title {
     font-family: theme("fontFamily.sans");
     font-size: theme("fontSize.sm");
@@ -123,13 +170,33 @@ h1.heading-text span {
     transform: translateX(2px);
 }
 
-.button.brand {
+.button.brand,
+.button-E11D77 {
     color: theme("colors.white");
     background-color: theme("colors.brand.pink");
 }
 
-.button.brand:hover {
+.button.brand:hover,
+.button-E11D77:hover {
     background-color: #ba0c5c;
+}
+
+.button-0D9488 {
+    color: theme("colors.white");
+    background-color: theme("colors.brand.green");
+}
+
+.button-0D9488:hover {
+    background-color: #07736a;
+}
+
+.button-FFD43B {
+    color: #896805;
+    background-color: theme("colors.brand.yellow");
+}
+
+.button-FFD43B:hover {
+    background-color: #fdde6f;
 }
 
 .testimonial svg {
@@ -195,12 +262,6 @@ h1.heading-text span {
     animation-play-state: paused;
 }
 
-@media (max-width: 768px) {
-    .marquee {
-        animation: none;
-    }
-}
-
 .icon {
     --brand-pink: theme("colors.brand.pink");
     --brand-green: theme("colors.brand.green");
@@ -237,4 +298,20 @@ h1.heading-text span {
 
 .service > :first-child:hover .blob-wrapper > img:first-child {
     transform: rotate(12deg);
+}
+
+.gradient-fade {
+    -webkit-mask-image: linear-gradient(to top, transparent, black);
+    mask-image: linear-gradient(to top, transparent, black);
+}
+
+@media (max-width: 768px) {
+    .marquee {
+        animation: none;
+    }
+
+    .swirl {
+        width: 10rem;
+        top: -12rem;
+    }
 }

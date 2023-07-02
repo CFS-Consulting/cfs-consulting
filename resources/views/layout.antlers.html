@@ -12,6 +12,16 @@
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
         <link rel="stylesheet" href="https://use.typekit.net/ooj2ftr.css" />
         <link rel="icon" type="image/svg" href="/assets/favicon.svg" />
+        {{#
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.12.3/dist/cdn.min.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"
+        ></script>
+        #}}
     </head>
     <body class="font-sans leading-normal font-light text-lg text-neutral-text">
         {{ partial:nav }}

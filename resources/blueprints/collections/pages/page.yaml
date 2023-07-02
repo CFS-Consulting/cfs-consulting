@@ -4,6 +4,7 @@ tabs:
     display: Main
     sections:
       -
+        display: 'Page Main'
         fields:
           -
             handle: title
@@ -23,7 +24,7 @@ tabs:
               show_filename: true
               show_set_alt: true
               type: assets
-              display: 'Featured Image'
+              display: 'Header Image'
               icon: assets
               listable: hidden
               instructions_position: above
@@ -35,46 +36,109 @@ tabs:
               type: markdown
               display: Content
               localizable: true
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              smartypants: true
+              container: assets
+              restrict: false
+              antlers: false
+              hide_display: false
           -
-            handle: section
+            handle: background_gradient
             field:
-              mode: default
-              create: true
-              collections:
-                - sections
-              type: entries
-              display: Section
-              icon: entries
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Background Gradient'
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+      -
+        display: 'Page Sidebar'
+        fields:
+          -
+            handle: sidebar_heading
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Sidebar Heading'
+              icon: text
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
           -
-            handle: author
+            handle: sidebar_text
             field:
-              type: users
-              display: Author
-              default: current
-              localizable: true
-              max_items: 1
-              width: 50
+              antlers: false
+              type: textarea
+              display: 'Sidebar Text'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
           -
-            handle: template
+            handle: sidebar_button
             field:
-              type: template
-              display: Template
-              localizable: true
-              width: 50
+              fields:
+                -
+                  handle: sidebar_button_text
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'Button Text'
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: sidebar_button_link
+                  field:
+                    type: link
+                    display: 'Button Link'
+                    icon: link
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+              mode: table
+              max_rows: 1
+              reorderable: true
+              fullscreen: true
+              type: grid
+              display: 'Sidebar Button'
+              icon: grid
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
           -
-            handle: color_field
+            handle: sidebar_color
             field:
               swatches:
-                - '#fce7f3'
-                - '#fef9c3'
-                - '#ccfbf1'
+                - '#E11D77'
+                - '#0D9488'
+                - '#FFD43B'
               allow_any: false
               type: color
-              display: 'Color Field'
+              display: 'Sidebar Color'
               icon: color
               listable: hidden
               instructions_position: above
@@ -99,6 +163,18 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+          -
+            handle: template
+            field:
+              hide_partials: true
+              blueprint: false
+              type: template
+              display: Template
+              icon: template
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
   seo:
     display: SEO
     sections:

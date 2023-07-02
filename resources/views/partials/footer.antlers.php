@@ -20,13 +20,13 @@
                 {{ site_settings:site_name }}
             </div>
             <div></div>
-            <ul class="cluster gap-6">
+            {{# <ul class="cluster gap-6">
                 {{ nav:utility_nav }}
                     <li>
                         <a href="{{ url }}" class="hover:underline">{{ title }}</a>
                     </li>
                 {{ /nav:utility_nav }}
-            </ul>
+            </ul> #}}
         </div>
     </div>
 </footer>

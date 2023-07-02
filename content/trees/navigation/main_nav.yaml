@@ -1,7 +1,11 @@
 tree:
   -
+    id: d73c3516-d8e5-4f64-9401-8f692e2388b0
+    title: Home
+    url: /
+  -
     id: 8123df9c-43f5-4fd7-a24f-67d44197bae0
     entry: 2d2166ac-e13a-474a-ac5e-66486e93a6de
   -
-    id: 907d3fd7-438a-451d-8753-a0c0cb2fd696
-    entry: d35feb7e-8e52-490f-933a-352e52d26ebe
+    id: 434dd817-7590-409b-b722-bc1752d2d14a
+    entry: 74da5900-1bd1-4c2f-bb76-fd22c334c796
