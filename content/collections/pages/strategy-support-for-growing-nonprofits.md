@@ -36,7 +36,7 @@ cta_button:
     cta_button_link: 'https://savvycal.com/cfs/ab7a2c74'
 cta_image: cta_illustration.png
 updated_by: 30a080a8-89ff-42bb-8e11-af1cd856bc8e
-updated_at: 1688408312
+updated_at: 1688409502
 expertise_heading: 'Research, reflect & advise.'
 expertise_description: "My role is to research, reflect, and advise you on the problem at hand and also help you think about the implications of your practices for the future. While working together I may also create process documents, plans, manuals, and other tools that you and your team can keep and adapt as you grow. Here's just a few of the needs I can support:"
 cta_heading: 'Want to know more?'
