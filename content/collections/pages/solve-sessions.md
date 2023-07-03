@@ -3,8 +3,8 @@ id: 2d2166ac-e13a-474a-ac5e-66486e93a6de
 blueprint: page
 title: 'Solve Sessions'
 author: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
-updated_by: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
-updated_at: 1688328320
+updated_by: 30a080a8-89ff-42bb-8e11-af1cd856bc8e
+updated_at: 1688409425
 color_field: '#ccfbf1'
 seo_title: 'Solve Sessions | CFS Consulting'
 seo_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -15,7 +15,7 @@ sidebar_button:
   -
     id: ljluiq9i
     sidebar_button_text: 'Learn More'
-    sidebar_button_link: 'https://google.com'
+    sidebar_button_link: 'https://savvycal.com/cfs/7cc3756f'
 sidebar_color: '#E11D77'
 template: pages/show
 background_gradient: hero_gradient_green.png
