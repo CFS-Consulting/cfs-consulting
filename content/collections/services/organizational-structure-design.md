@@ -1,9 +1,12 @@
 ---
 id: b8c8311d-2290-423e-8191-e87f1e7d290e
 blueprint: service
-title: 'Organizational Structure & Design'
-updated_by: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
-updated_at: 1688249277
+title: 'Organizational Design'
+updated_by: 30a080a8-89ff-42bb-8e11-af1cd856bc8e
+updated_at: 1688407690
 image: bulb_pink.png
 ---
-From mapping roles and crafting job descriptions to coaching you through the recruitment lifecycle, I will get to the bottom of how your team works. We will plan seamless onboarding and off-boarding processes, staff transitions, and more.
+I'll help you get tot he bottom of how your team works:
+- Mapping roles & crafting competitive job descriptions
+- Planning your on-boarding/off-boarding processes
+- Listening to your team to provide confidential assessment and feedback for leadership
