@@ -4,7 +4,7 @@ blueprint: page
 title: About
 author: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
 updated_by: 30a080a8-89ff-42bb-8e11-af1cd856bc8e
-updated_at: 1688334674
+updated_at: 1688758208
 template: pages/show
 color_field: '#ccfbf1'
 featured_image: blob1.svg
@@ -13,7 +13,7 @@ sidebar_text: 'Schedule a 15 minute meet! You might know exactly what you need o
 sidebar_button:
   -
     id: ljltmbh7
-    sidebar_button_text: 'Book an Appointment'
+    sidebar_button_text: 'Book a Call'
     sidebar_button_link: 'https://savvycal.com/cfs/ab7a2c74'
 sidebar_color: '#0D9488'
 background_gradient: hero_gradient_green.png
