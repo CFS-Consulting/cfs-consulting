@@ -4,7 +4,7 @@ blueprint: page
 title: 'Solve Sessions'
 author: e5e4bcc6-19ff-439c-8da4-c34b26fc4e3e
 updated_by: 30a080a8-89ff-42bb-8e11-af1cd856bc8e
-updated_at: 1688409425
+updated_at: 1688753179
 color_field: '#ccfbf1'
 seo_title: 'Solve Sessions | CFS Consulting'
 seo_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -22,11 +22,11 @@ background_gradient: hero_gradient_green.png
 ---
 ## Troubleshooting Support
 
-Solve Sessions tackle a single problem, roadblock, or question that’s holding you or your team back. Think of it as very practical coaching. 
+Solve Sessions tackle a single problem, roadblock, or question that’s holding you or your team back. Think of it as *very* practical coaching. 
 
 Solve sessions have addressed:
-- How to get things done when the office admins who quit without notice or notes.
-- Stalled gala planning and developing an event timeline asap.
+- How to get things done when the office admin quits without notice or notes.
+- Stalled gala planning: how do I develop an event timeline asap?!
 - Figuring out which position is the most necessary next hire: program or fundraising?
 
 Solve Sessions **start at $110 per hour**.
