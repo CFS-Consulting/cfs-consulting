@@ -202,7 +202,7 @@
             style="--min-width: min(45vw, 500px)"
         >
             {{ expertise_entries }}
-            <div class="flow service" style="--flow-space: 2rem">
+            <div class="service">
                 <div>
                     <div class="blob-wrapper h-36 w-36 mb-4 relative">
                         {{ asset url="{{ image }}" }} {{ glide :src="url"
@@ -224,7 +224,7 @@
                     </div>
                     <h3 class="heading-text text-3xl">{{ title }}</h3>
                 </div>
-                {{ content | widont }}
+                <div class="page-text flow mt-8">{{ content | widont }}</div>
             </div>
             {{ /expertise_entries }}
         </div>
