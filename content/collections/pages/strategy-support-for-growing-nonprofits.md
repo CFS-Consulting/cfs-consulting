@@ -22,6 +22,7 @@ client_entries:
   - 12b95e56-567b-457f-b437-a59fa2b317e5
   - beaae69d-e8d3-489b-a89a-427faa012a2e
   - b7f7f948-12b4-4d53-9371-38a72a5a43a0
+  - 918d523d-1c0d-46bd-ae53-b62f313960a8
 expertise_icon: show-source
 expertise_eyebrow: Expertise
 expertise_button:
@@ -36,7 +37,7 @@ cta_button:
     cta_button_link: 'https://savvycal.com/cfs/ab7a2c74'
 cta_image: cta_illustration.png
 updated_by: 30a080a8-89ff-42bb-8e11-af1cd856bc8e
-updated_at: 1688409502
+updated_at: 1689700939
 expertise_heading: 'Research, reflect & advise.'
 expertise_description: "My role is to research, reflect, and advise you on the problem at hand and also help you think about the implications of your practices for the future. While working together I may also create process documents, plans, manuals, and other tools that you and your team can keep and adapt as you grow. Here's just a few of the needs I can support:"
 cta_heading: 'Want to know more?'
