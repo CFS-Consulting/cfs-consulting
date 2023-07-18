@@ -143,11 +143,11 @@
         {{ testimonial_subheading }}
     </h3>
     <ul
-        class="cluster gap-12 mt-12 marquee justify-center text-center"
+        class="flex px-4 pb-4 md:pb-0 md:px-0 items-center gap-12 mt-12 marquee md:justify-center text-center"
         role="list"
     >
         {{ client_entries }}
-        <li class="small-title">{{ title }}</li>
+        <li class="small-title whitespace-nowrap">{{ title }}</li>
         {{ /client_entries }}
     </ul>
     {{ asset url="/assets/scribbled_line.png" }} {{ glide :src="url" width="600"

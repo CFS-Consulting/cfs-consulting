@@ -1,9 +1,9 @@
 <section class="mt-32">
     <div class="content-wrapper">
         <h2 class="font-heading text-4xl text-gray-900">Who I work with</h2>
-        <ul class="cluster gap-12 mt-12 marquee" role="list">
+        <ul class="flex items-center gap-12 mt-12 marquee" role="list">
             {{ collection:clients }}
-            <li class="small-title">{{ title }}</li>
+            <li class="small-title whitespace-nowrap">{{ title }}</li>
             {{ /collection:clients }}
         </ul>
     </div>
