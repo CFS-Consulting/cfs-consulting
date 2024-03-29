@@ -40,11 +40,7 @@ return [
 
     'copy' => [
         public_path('build') => 'build',
-        public_path('assets/favicon.svg') => 'favicon.svg',
-        public_path('assets/blob1.svg') => 'blob1.svg',
-        public_path('assets/blob2.svg') => 'blob2.svg',
-        public_path('assets/blob3.svg') => 'blob3.svg',
-        public_path('assets/blob4.svg') => 'blob4.svg',
+        public_path('assets') => 'assets',
     ],
 
     'symlinks' => [
