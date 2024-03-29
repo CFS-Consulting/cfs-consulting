@@ -215,12 +215,14 @@
                             height="{{ height }}"
                             loading="lazy"
                         />
-                        {{ /glide }} {{ /asset }}
+                        {{ /glide }} {{ /asset }} {{ glide
+                        src="/img/assets/blob{{ count }}.svg" width="600" }}
                         <img
-                            src="/assets/blob{{ count }}.svg"
+                            src="{{ url }}"
                             alt=""
                             class="absolute inset-0 z-[1] w-full h-full scale-90"
                         />
+                        {{ /glide }}
                     </div>
                     <h3 class="heading-text text-3xl">{{ title }}</h3>
                 </div>
