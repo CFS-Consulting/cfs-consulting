@@ -9,6 +9,20 @@
             name="description"
             content="{{ seo_description ?? site_settings:site_description }}"
         />
+        <link rel="canonical" href="{{ current_url }}" />
+        <meta name="robots" content="index, follow" />
+        <meta
+            property="og:title"
+            content="{{ seo_title ?? title ?? site:name }}"
+        />
+        <meta property="og:type" content="website" />
+        {{ if seo_image }} <meta property="og:image" content="{{ glide
+        :src="seo_image" w="1200" h="630" }}"> {{ /if }}
+        <meta property="og:url" content="{{ current_url }}" />
+        <meta
+            property="og:description"
+            content="{{ seo_description ?? site_settings:site_description }}"
+        />
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
         <link rel="stylesheet" href="https://use.typekit.net/ooj2ftr.css" />
         <link rel="icon" type="image/svg" href="/assets/favicon.svg" />
